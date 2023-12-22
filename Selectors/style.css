@@ -1,0 +1,70 @@
+/* CSS - Casdcading style sheets
+- last elemnt override previous
+- Specificity can change it:
+-classes more specific than elemnts selectors
+Inheritance:
+element inherites properties from its parent element
+border-prop is not inherited by other elemnts!!
+-the props in a universal selector are not iinherited
+ they apply to all elemnts
+*/
+/* Inheritance from body element all childs inherit
+some properties
+*/
+
+/* Universal selector
+thats selects everything
+*/
+*{
+    font-family:monospace;
+}
+
+/* element selectors */
+body {
+    font-size:22px;
+    border:3px solid black;
+}
+
+p {
+    color:purple;
+}
+
+/* but we can group selctors */
+h1, h2 {
+    color:red;
+}
+/* if we write like this it means h2 must exist inside h1
+<h1>
+    <h2>Head2</h2>
+</h1>
+*/
+
+/* class selectors starts with .period */
+.gray{
+    color:gray;
+}
+/* but more specific selectors is ID selectors 
+should exist once in html
+should be unique in other words
+
+*/
+#second {
+    font-style: italic;
+}
+
+/* Nested elements */
+p span{
+    text-transform:uppercase;
+    background: gold;
+}
+/* but if want to specify the particular span inside the p tag
+we can aplly class and its priority higher than Nested elements
+*/
+.highlight {
+    text-transform:lowercase;
+    background: lightgreen;
+}
+
+
+
+
