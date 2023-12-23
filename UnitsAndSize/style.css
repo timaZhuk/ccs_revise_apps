@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* 
+we can use px for boders thickness  
+*/
+/* Relative units. Like percemtages:represents a 
+fraction of some other value
+h1 - block level element
+*/
+/* h1 inside header tag
+if we put 50% width to header then
+h1 tag take 50% from Header's 50% (h1-25%)
+*/
+header{
+    width:80%;
+}
+h1{
+    border:2px dashed red;
+    width: 40%;
+    font-size: 3rem;
+    padding:0.5em;
+}
+/* rem - root (browser, html) font-size size 
+1 rem = 16px-- is a default size
+2 rem = 32px
+When we use 1em our p tag look at main-root el and size is doubled
+main-16px  --> p-32px 
+em - it is look at element itself
+we can use 'em' for paddings, margins.
+Button
+If we have font-size in rem we have to use em for padding in em
+Button
+*/
+/* we can use vw - view width of page (scree)
+vh- view height of the page
+-----------
+we can create 10 p-tags with lorem ipsum in html 10
+p*10>lorem
+
+*/
+body{
+    width:100%;
+    /* it is doesn't account the width of right scroll bar
+    if want see(use 100% hiegt of page)even if have small content
+    we can use min-height
+
+    */
+    min-height: 100vh;
+}
+
+main{
+    width:50%;
+    background-color: skyblue;
+    font-size: 2rem;
+}
+p{
+  font-size:2rem;
+  width:40ch;
+}
+
+
+
+
+/* ------------------------------------------------ */
+/* ch - it is the size of glyph "0" font
+we can use it for width (40 characters for width before line wraps)
+*/
+/* root element overwrite the default font-size or browser size */
+/* html{
+    font-size: 16px;
+} */
+
+/* 
+We don't use 'px' for the font-size
+ default value: 16px  in absolut values
+ */
+/* p{
+    font-size: 32px; 
+} */
