@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Merriweather&family=Outfit:wght@400;700&family=Roboto:wght@300&display=swap');
+
+body{
+    padding:10%;
+    font-size: 2rem;
+    font-family:'Roboto',sans-serif;
+}
+/* If links are not visited they have a blue color (underlined)
+and purple color  for visited link
+when we hover it to our link (arrow becomes pointer)
+    - text-decoration:none; make a link without underlined line
+    - cursor: not-allowed; when we point to the link it shows
+    red crossed circle
+    - color:blue; default color unvisited link
+    - a:visited - represent a current state of element (visited link)
+    - a:hover - when we point on the link
+    - a:active - when we click the link
+    - opacity:  -which is making something transparent
+*/
+a {
+    /* text-decoration:none; */
+    /* cursor: pointer; */
+    color:hsl(210, 100%, 56%);
+}
+/* psuedo classes */
+a:visited{
+    color:red;
+}
+a:hover, a:focus {
+    /* color:hsl(180, 100%, 56%); */
+    opacity:0.4;
+    background-color: aquamarine;
+}
+a:active {
+    color:yellow;
+}
+
+
+
+
+
+
+
+
+

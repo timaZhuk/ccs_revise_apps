@@ -1,0 +1,64 @@
+/* for reseting all margins and paddings we use 
+universal selector 
+-content-box is default in browser
+if choose width 400px for elemnr with content-box  
+your element will have 400px
+-border-box we have less than 400px it includes padding and boders
+in sum gives us 400px
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+/* margin: top right bottom left
+    margin: 1.5em 2em; the same (top, bottom)em (right, left)em 
+-outline doesn't take space like boder
+-outline-offset make boder on different distances from
+ our real boders
+*/
+.container {
+    border:dashed red;
+    border-top:5px solid;
+    border-right:4px dotted;
+    font-size: 1.5rem;
+    margin:1.5em;
+    padding:1.5em;
+    outline:5px solid purple;
+    outline-offset: 6px;
+}
+
+/* create a circle from div */
+.circle{
+    background-color: aquamarine;
+    width:200px;
+    height:200px;
+    border: 2px solid black;
+    margin: 3em auto;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------ */
+/* ch - it is the size of glyph "0" font
+we can use it for width (40 characters for width before line wraps)
+*/
+/* root element overwrite the default font-size or browser size */
+/* html{
+    font-size: 16px;
+} */
+
+/* 
+We don't use 'px' for the font-size
+ default value: 16px  in absolut values
+ */
+/* p{
+    font-size: 32px; 
+} */
