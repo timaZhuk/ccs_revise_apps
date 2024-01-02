@@ -5,3 +5,50 @@ body{
     font-size: 2rem;
     font-family:'Roboto',sans-serif;
 }
+
+/* 
+- list-style-type: decimal; - default value
+or choose 'decimal-leading-zero'
+- list-style-type: lower-alpha; - we can change the list 
+numbers (style) 
+- or change to 'bullet point' or 'disc'
+- list-style-type: disc;
+- list-style-type: circle;
+- list-style-type: square; for unordered list
+- text-align: center; put the text in the center ,
+but bullet points stay in the same place
+- list-style-position:inside; put bullet points inside 
+the list values
+- list-style-position:ouside; put bullet points outside.
+- line-height:1.5; put some extra space between list items
+- list-style-image: urls(../image_folder/image.png)
+instead of default values for bullet points we can insert image
+- ul li:nth-child(2) -change n-child inside list 2,3,4...
+- ul li:nth-child(odd) - change only odd numbers 
+- :: marker - pseudo element (not a class)
+- content:">>" we can change the marker sign
+
+*/
+ol {
+    list-style-type: decimal;
+    padding:0;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position:inside;
+    color:blue;
+    line-height:1.5;
+}
+
+ul li:nth-child(odd){
+    color:green;
+}
+
+ul ::marker{
+    color:black;
+    font-family:fantasy;
+    font-size: 3rem;
+    content:">>"
+}

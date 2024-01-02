@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Merriweather&family=Outfit:wght@400;700&family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-size: 2rem;
+    font-family:'Roboto',sans-serif;
+}
+
+/* 
+-block level elements : <p>, <div>, main
+-span 100% width, have default 'margin'
+-they could be limited by their parent container element
+-------------------------------------------------
+-inline level elements: span, a, li
+- display:inline-block; we cange swich inline el to block el
+- text-align: right; put our text on the right side
+- display:inline-block; we put all li elements inline
+- margin-inline: 0.5rem; margins in one line left right
+*/
+
+ul{
+    
+    background-color: black;
+    list-style-type:none;
+    padding-left:0;
+    text-align: right;
+    margin:0;
+}
+
+li{
+    display:inline-block;
+    margin-inline: 2rem;
+
+}
+
+li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+li a:hover, li a:focus{
+    text-decoration: underline;
+}
+
+
+
+/* main {
+    background-color: aqua;
+    width:50%;
+} */
+
+/* p {
+    background-color: lightgray;
+    
+}
+
+.opposite {
+    display:inline-block;
+    background-color: rgba(0, 0, 0, 0.534);
+    color:white;
+    padding:1rem;
+    margin-bottom:100px;
+} */
+
